@@ -25,7 +25,3 @@
 
 #### 3. Remove error when increment button is clicked
   * If error is showing and increment button is clicked, clear the error.
-
-## Credits
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-"# OverUnderTracker" 
