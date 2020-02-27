@@ -12,15 +12,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div data-test="component-app">
-        <h1 data-test="counter-display"> Am I being clear? Count: {this.state.counter}</h1>
+      <div>
+        <h1> Am I being clear? Count: {this.state.counter}</h1>
         <button
-          data-test="increment-button"
           onClick={() => this.setState({ counter: this.state.counter + 1 })}
-        > Yes, I said it
+        > Yes, he said it
       </button>
         <button
-          data-test="decrement-button"
           onClick={() => this.setState({ counter: this.state.counter - 1 })}
         >
           Decrement, I messed up
@@ -30,12 +28,10 @@ class App extends Component {
         >Clear count</button>
       <h1> *Laughs* Count: {this.state.laughs}</h1>
       <button
-          data-test="increment-button"
           onClick={() => this.setState({ laughs: this.state.laughs+ 1 })}
         > Hehehehe
       </button>
       <button
-          data-test="decrement-button"
           onClick={() => this.setState({ laughs: this.state.laughs- 1 })}
         >
           Decrement, I messed up
@@ -45,12 +41,10 @@ class App extends Component {
       </button>
       <h1> *Huff* Count: {this.state.huffs}</h1>
       <button
-          data-test="increment-button"
           onClick={() => this.setState({ huffs: this.state.huffs+ 1 })}
         > HUFF
       </button>
       <button
-          data-test="decrement-button"
           onClick={() => this.setState({ huffs: this.state.huffs- 1 })}
         >
           Decrement, I messed up
