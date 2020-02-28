@@ -1,13 +1,15 @@
 {
   "name": "click-counter",
   "version": "1.0.0",
+  "homepage": "https://jeffllama.githhub.io/OverUnderTracker/website/",
   "author": "Bonnie Schulkin",
   "license": "AGPL-3.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flyrightsister/udemy-react-testing-projects.git"
+    "url": "git+https://github.com/jeffllama/OverUnderTracker"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "^16.3.2",
     "react-dom": "^16.13.0",
     "react-scripts": "1.1.4"
@@ -15,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
