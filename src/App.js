@@ -8,33 +8,23 @@ class App extends Component {
       counter: 0,
       laughs: 0,
       huffs: 0,
+
     };
   }
   render() {
     return (
       <div>
         <h1> Am I being clear? Count: {this.state.counter}</h1>
-        <button
-          onClick={() => this.setState({ counter: this.state.counter + 1 })}
-        > Yes, he said it
-      </button>
-        <button
-          onClick={() => this.setState({ counter: this.state.counter - 1 })}
-        >
-          Decrement, I messed up
-      </button>
+        <button onClick={() => this.setState({ counter: this.state.counter + 1 })} > Yes, he said it </button>
+        <button onClick={() => this.setState({ counter: this.state.counter - 1 })}> Decrement, I messed up </button>
         <button
           onClick={() => this.setState({ counter: 0 })}
         >Clear count</button>
       <h1> *Laughs* Count: {this.state.laughs}</h1>
-      <button
-          onClick={() => this.setState({ laughs: this.state.laughs+ 1 })}
-        > Hehehehe
+      <button onClick={() => this.setState({ laughs: this.state.laughs+ 1 })} > Hehehehe
       </button>
       <button
-          onClick={() => this.setState({ laughs: this.state.laughs- 1 })}
-        >
-          Decrement, I messed up
+          onClick={() => this.setState({ laughs: this.state.laughs- 1 })}> Decrement, I messed up
       </button>
       <button onClick={() => this.setState({ laughs: 0})}>
           Don't clear me or you go to hell
@@ -44,9 +34,7 @@ class App extends Component {
           onClick={() => this.setState({ huffs: this.state.huffs+ 1 })}
         > HUFF
       </button>
-      <button
-          onClick={() => this.setState({ huffs: this.state.huffs- 1 })}
-        >
+      <button onClick={() => this.setState({ huffs: this.state.huffs- 1 })} >
           Decrement, I messed up
       </button>
       <button onClick={() => this.setState({ huffs: 0})}>
